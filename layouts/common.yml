@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  rsyslog:
+    container_name: rsyslog
+    build: 
+      context: ../services/rsyslog
+    image: rsyslog 
+    expose:
+      - "514"

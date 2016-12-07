@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  rsyslog:
+    extends:
+      file: common.yml
+      service: rsyslog
+    ports:
+      - "514:514"
