@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  rsyslog:
+  logging_server:
     extends:
       file: common.yml
-      service: rsyslog
+      service: logging_server
     ports:
       - "514:514"
