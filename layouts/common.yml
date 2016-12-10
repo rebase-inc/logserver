@@ -1,10 +1,10 @@
 version: '2'
 
 services:
-  logging_server:
-    container_name: logging_server
+  logserver:
+    container_name: logserver
     build: 
-      context: ../services/logging_server
-    image: logging_server 
+      context: ../services/logserver
+    image: logserver 
     expose:
       - "514"

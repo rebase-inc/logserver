@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  logging_server:
+  logserver:
     extends:
       file: common.yml
-      service: logging_server
+      service: logserver
     ports:
       - "514:514"
