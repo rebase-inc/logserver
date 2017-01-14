@@ -9,4 +9,4 @@ COPY rotate_log /usr/bin/rotate_log
 
 EXPOSE 514/udp
 
-CMD ["rsyslogd", "-n"]
+CMD crond && rm -f /var/run/rsyslogd.pid && rsyslogd -n
